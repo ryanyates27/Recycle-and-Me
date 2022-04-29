@@ -3,7 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/ryanj/AndroidStudioProjects/RecycleandMe/app/src/main/res/layout/activity_main.xml" value="0.3482789855072464" />
+        <entry key="..\:/Users/ryanj/AndroidStudioProjects/RecycleandMe/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.222" />
+        <entry key="..\:/Users/ryanj/AndroidStudioProjects/RecycleandMe/app/src/main/res/drawable/ic_launcher_background.xml" value="0.222" />
+        <entry key="..\:/Users/ryanj/AndroidStudioProjects/RecycleandMe/app/src/main/res/drawable/settings.xml" value="0.1965" />
+        <entry key="..\:/Users/ryanj/AndroidStudioProjects/RecycleandMe/app/src/main/res/layout/activity_home_screen.xml" value="0.25" />
+        <entry key="..\:/Users/ryanj/AndroidStudioProjects/RecycleandMe/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/ryanj/AndroidStudioProjects/RecycleandMe/app/src/main/res/layout/hdpe.xml" value="0.161231884057971" />
+        <entry key="..\:/Users/ryanj/AndroidStudioProjects/RecycleandMe/app/src/main/res/layout/ldpe.xml" value="0.161231884057971" />
+        <entry key="..\:/Users/ryanj/AndroidStudioProjects/RecycleandMe/app/src/main/res/layout/pete.xml" value="0.161231884057971" />
+        <entry key="..\:/Users/ryanj/AndroidStudioProjects/RecycleandMe/app/src/main/res/layout/pid.xml" value="0.161231884057971" />
+        <entry key="..\:/Users/ryanj/AndroidStudioProjects/RecycleandMe/app/src/main/res/layout/plastic_identification_numbers.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/ryanj/AndroidStudioProjects/RecycleandMe/app/src/main/res/layout/pp.xml" value="0.161231884057971" />
+        <entry key="..\:/Users/ryanj/AndroidStudioProjects/RecycleandMe/app/src/main/res/layout/ps.xml" value="0.161231884057971" />
+        <entry key="..\:/Users/ryanj/AndroidStudioProjects/RecycleandMe/app/src/main/res/layout/pvc.xml" value="0.161231884057971" />
+        <entry key="..\:/Users/ryanj/AndroidStudioProjects/RecycleandMe/app/src/main/res/menu/settings_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/ryanj/AndroidStudioProjects/RecycleandMe/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.222" />
+        <entry key="..\:/Users/ryanj/AndroidStudioProjects/RecycleandMe/app/src/main/res/xml/root_preferences.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>
