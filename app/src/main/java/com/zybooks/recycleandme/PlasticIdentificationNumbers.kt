@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.TextView
+
 
 class PlasticIdentificationNumbers : AppCompatActivity() {
 
@@ -11,6 +13,7 @@ class PlasticIdentificationNumbers : AppCompatActivity() {
     {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.plastic_identification_numbers)
+
     }
 
     fun plasticIdentificationNumbers(view: View)
