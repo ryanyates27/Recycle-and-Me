@@ -13,7 +13,9 @@
             android:name=".PINInfoPage"
             android:exported="false"
             android:label="@string/title_activity_pininfo_page"
-            android:theme="@style/Theme.RecycleAndMe.NoActionBar" />
+            android:theme="@style/Theme.RecycleAndMe.NoActionBar"
+            android:parentActivityName=".PlasticIdentificationNumbers"
+        />
         <activity
             android:name=".SettingsActivity"
             android:exported="false"
@@ -21,10 +23,13 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".HomeScreen"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".PlasticIdentificationNumbers"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".HomeScreen"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

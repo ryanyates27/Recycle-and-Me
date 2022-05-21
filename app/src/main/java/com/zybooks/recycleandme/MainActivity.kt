@@ -10,8 +10,6 @@ import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
 
-    private var oldVal = ""
-
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)

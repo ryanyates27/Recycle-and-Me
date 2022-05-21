@@ -1,6 +1,9 @@
 package com.zybooks.recycleandme
 
 import android.os.Bundle
+import android.view.View
+import android.widget.ImageButton
+import android.widget.TextView
 import com.google.android.material.appbar.CollapsingToolbarLayout
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
@@ -11,19 +14,19 @@ class PINInfoPage : AppCompatActivity() {
 
     private lateinit var binding: ActivityPininfoPageBinding
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?)
+    {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_pininfo_page)
 
-        binding = ActivityPininfoPageBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        setSupportActionBar(findViewById(R.id.toolbar))
-        binding.toolbarLayout.title = title
-        binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
+
+        val intentValue = intent.getStringExtra("Data")
+        findViewById<TextView>(R.id.pinTextView).apply{
+            text = intentValue.toString()
         }
-    }
 
+    }
 
 }

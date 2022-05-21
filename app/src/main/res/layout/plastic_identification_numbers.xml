@@ -7,7 +7,7 @@
     tools:context=".PlasticIdentificationNumbers">
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/PETEimage"
         android:layout_width="158dp"
         android:layout_height="152dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -16,33 +16,47 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.06"
-        app:srcCompat="@drawable/plastic_identifier1" />
+        app:srcCompat="@drawable/plastic_identifier1"
+        android:clickable="true"
+        android:onClick="onButtonClickedPET"
+        android:focusable="true"
+        />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/HDPEimage"
         android:layout_width="158dp"
         android:layout_height="152dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.746"
-        app:layout_constraintStart_toEndOf="@+id/imageButton3"
+        app:layout_constraintStart_toEndOf="@+id/PETEimage"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.06"
-        app:srcCompat="@drawable/plastic_identifier2" />
+        app:srcCompat="@drawable/plastic_identifier2"
+        android:clickable="true"
+        android:onClick="onButtonClickedHDPE"
+        android:focusable="true"
+        />
 
     <ImageButton
-        android:id="@+id/imageButton6"
+        android:id="@+id/PVCImage"
         android:layout_width="158dp"
         android:layout_height="152dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton8"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton7"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/PPimage"
+        app:layout_constraintEnd_toStartOf="@+id/LDPEimage"
         app:layout_constraintHorizontal_bias="0.213"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
-        app:srcCompat="@drawable/plastic_identifer3" />
+        app:layout_constraintTop_toBottomOf="@+id/PETEimage"
+        app:layout_constraintVertical_bias="0.954"
+        app:srcCompat="@drawable/plastic_identifer3"
+        android:clickable="true"
+        android:onClick="onButtonClickedPVC"
+        android:focusable="true"
+        />
 
     <ImageButton
-        android:id="@+id/imageButton7"
+        android:id="@+id/LDPEimage"
         android:layout_width="158dp"
         android:layout_height="152dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -51,10 +65,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.395"
-        app:srcCompat="@drawable/plastic_identifier4" />
+        app:srcCompat="@drawable/plastic_identifier4"
+        android:clickable="true"
+        android:onClick="onButtonClickedLDPE"
+        android:focusable="true"/>
 
     <ImageButton
-        android:id="@+id/imageButton8"
+        android:id="@+id/PPimage"
         android:layout_width="158dp"
         android:layout_height="152dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -63,10 +80,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.73"
-        app:srcCompat="@drawable/plastic_identifier5" />
+        app:srcCompat="@drawable/plastic_identifier5"
+        android:clickable="true"
+        android:onClick="onButtonClickedPP"
+        android:focusable="true"/>
 
     <ImageButton
-        android:id="@+id/imageButton9"
+        android:id="@+id/PSimage"
         android:layout_width="158dp"
         android:layout_height="152dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -75,6 +95,87 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.73"
-        app:srcCompat="@drawable/plastic_identifier6" />
+        app:srcCompat="@drawable/plastic_identifier6"
+        android:clickable="true"
+        android:onClick="onButtonClickedPS"
+        android:focusable="true"/>
+
+    <TextView
+        android:id="@+id/PETtext"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="@string/PET"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941" />
+
+    <TextView
+        android:id="@+id/HDPEtext"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="@string/HDPE"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941" />
+
+    <TextView
+        android:id="@+id/PVCtext"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="@string/PVC"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941" />
+
+    <TextView
+        android:id="@+id/LDPEtext"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="@string/LDPE"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941" />
+
+    <TextView
+        android:id="@+id/PPtext"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="@string/PP"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941" />
+
+    <TextView
+        android:id="@+id/PStext"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="@string/PS"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
