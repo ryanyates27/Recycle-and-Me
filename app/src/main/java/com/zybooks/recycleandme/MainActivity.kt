@@ -1,8 +1,11 @@
 package com.zybooks.recycleandme
 
+import android.content.ContentValues
 import android.content.Intent
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -19,6 +22,16 @@ class MainActivity : AppCompatActivity() {
 
     fun startApp(view: View)
     {
+        var mediaPlayer: MediaPlayer? = MediaPlayer.create(this, R.raw.plastic_crinkle)
+        mediaPlayer?.setOnCompletionListener(MediaPlayer.OnCompletionListener { mp ->
+            if (mp != null) {
+                mp.release()
+                mediaPlayer = null
+                Log.d(ContentValues.TAG, "release mediaplayer")
+            }
+        })
+        mediaPlayer?.start()
+
         val intent = Intent(this, HomeScreen::class.java)
 
         startActivity(intent)

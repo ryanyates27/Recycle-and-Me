@@ -1,11 +1,17 @@
 package com.zybooks.recycleandme
 
+import android.content.ContentValues.TAG
 import android.content.Intent
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import android.media.SoundPool
+import android.media.AudioAttributes
+import android.util.Log
+import android.widget.ImageButton
 
 
 class PlasticIdentificationNumbers : AppCompatActivity()
@@ -16,6 +22,7 @@ class PlasticIdentificationNumbers : AppCompatActivity()
     lateinit var LDPEtextView: TextView
     lateinit var PPtextView: TextView
     lateinit var PStextView: TextView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,10 +36,24 @@ class PlasticIdentificationNumbers : AppCompatActivity()
         PStextView = findViewById(R.id.PStext)
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+
     }
+
 
     fun onButtonClickedPET(view: View)
     {
+
+        var mediaPlayer: MediaPlayer? = MediaPlayer.create(this, R.raw.plastic_crinkle)
+               mediaPlayer?.setOnCompletionListener(MediaPlayer.OnCompletionListener { mp ->
+                   if (mp != null) {
+                       mp.release()
+                       mediaPlayer = null
+                       Log.d(TAG, "release mediaplayer")
+                   }
+               })
+        mediaPlayer?.start()
+
             val i = Intent(this, PINInfoPage::class.java).apply {
                 putExtra("Data", PETtextView.text.toString())
             }
@@ -42,6 +63,17 @@ class PlasticIdentificationNumbers : AppCompatActivity()
 
     fun onButtonClickedHDPE(view: View)
     {
+        var mediaPlayer: MediaPlayer? = MediaPlayer.create(this, R.raw.plastic_crinkle)
+        mediaPlayer?.setOnCompletionListener(MediaPlayer.OnCompletionListener { mp ->
+            if (mp != null) {
+                mp.release()
+                mediaPlayer = null
+                Log.d(TAG, "release mediaplayer")
+            }
+        })
+        mediaPlayer?.start()
+
+
         val i = Intent(this, PINInfoPage::class.java).apply {
             putExtra("Data", HDPEtextView.text.toString())
         }
@@ -51,6 +83,17 @@ class PlasticIdentificationNumbers : AppCompatActivity()
 
     fun onButtonClickedPVC(view: View)
     {
+        var mediaPlayer: MediaPlayer? = MediaPlayer.create(this, R.raw.plastic_crinkle)
+        mediaPlayer?.setOnCompletionListener(MediaPlayer.OnCompletionListener { mp ->
+            if (mp != null) {
+                mp.release()
+                mediaPlayer = null
+                Log.d(TAG, "release mediaplayer")
+            }
+        })
+        mediaPlayer?.start()
+
+
         val i = Intent(this, PINInfoPage::class.java).apply {
             putExtra("Data", PVCtextView.text.toString())
         }
@@ -60,6 +103,17 @@ class PlasticIdentificationNumbers : AppCompatActivity()
 
     fun onButtonClickedLDPE(view: View)
     {
+        var mediaPlayer: MediaPlayer? = MediaPlayer.create(this, R.raw.plastic_crinkle)
+        mediaPlayer?.setOnCompletionListener(MediaPlayer.OnCompletionListener { mp ->
+            if (mp != null) {
+                mp.release()
+                mediaPlayer = null
+                Log.d(TAG, "release mediaplayer")
+            }
+        })
+        mediaPlayer?.start()
+
+
         val i = Intent(this, PINInfoPage::class.java).apply {
             putExtra("Data", LDPEtextView.text.toString())
         }
@@ -69,6 +123,17 @@ class PlasticIdentificationNumbers : AppCompatActivity()
 
     fun onButtonClickedPP(view: View)
     {
+        var mediaPlayer: MediaPlayer? = MediaPlayer.create(this, R.raw.plastic_crinkle)
+        mediaPlayer?.setOnCompletionListener(MediaPlayer.OnCompletionListener { mp ->
+            if (mp != null) {
+                mp.release()
+                mediaPlayer = null
+                Log.d(TAG, "release mediaplayer")
+            }
+        })
+        mediaPlayer?.start()
+
+
         val i = Intent(this, PINInfoPage::class.java).apply {
             putExtra("Data", PPtextView.text.toString())
         }
@@ -78,6 +143,17 @@ class PlasticIdentificationNumbers : AppCompatActivity()
 
     fun onButtonClickedPS(view: View)
     {
+        var mediaPlayer: MediaPlayer? = MediaPlayer.create(this, R.raw.plastic_crinkle)
+        mediaPlayer?.setOnCompletionListener(MediaPlayer.OnCompletionListener { mp ->
+            if (mp != null) {
+                mp.release()
+                mediaPlayer = null
+                Log.d(TAG, "release mediaplayer")
+            }
+        })
+        mediaPlayer?.start()
+
+
         val i = Intent(this, PINInfoPage::class.java).apply {
             putExtra("Data", PStextView.text.toString())
         }
