@@ -9,6 +9,9 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
+import android.widget.ImageView
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
@@ -17,6 +20,10 @@ class MainActivity : AppCompatActivity() {
     {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val paperBallImage = findViewById<ImageView>(R.id.imageView3)
+        val swishBall: Animation = AnimationUtils.loadAnimation(this, R.anim.paper_ball_animation)
+        paperBallImage.startAnimation(swishBall)
 
     }
 
