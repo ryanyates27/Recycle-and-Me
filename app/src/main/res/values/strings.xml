@@ -3,6 +3,8 @@
     <string name="start_app">Lets Begin</string>
     <string name="plastic_identifiers">Plastic Number Identifiers</string>
     <string name="title_activity_settings">SettingsActivity</string>
+    <string name="channel_name">Encourage User</string>
+    <string name="channel_description">Display encouragement</string>
 
     <string name="settings">Settings</string>
     <string name="pref_title_theme">Dark theme</string>
@@ -61,11 +63,11 @@
     "The benefits of LDPE include: , smooth, shatter resistant, and can withstand "
     "temperatures ranging from -58 F to 185 F. \n\n"
 
-    "LDPE products: \n\n"
+    "LDPE products: Plastic bread bags. food wrappings, squeezable bottles, and cereal bags\n\n"
 
-    "Proper disposal: \n\n"
+    "Proper disposal: No contaminants/Washed and rinsed\n\n"
 
-    "Method of disposal: "
+    "Method of disposal: Curbside recycle programs"
     </string>
 
     <string name="PP">

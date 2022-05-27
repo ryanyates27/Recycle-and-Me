@@ -9,6 +9,7 @@ import android.util.Log
 import android.view.View
 
 class HomeScreen : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
